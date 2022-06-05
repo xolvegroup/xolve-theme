@@ -9,6 +9,10 @@
     <moqui.screen.ScreenThemeResource screenThemeId="XOLVE" sequenceNum="101" resourceTypeEnumId="STRT_SHORTCUT_ICON"
                                       resourceValue="/xstatic/favicon.ico"/>
 
+    <!-- Login page uses DEFAULT theme. Overwrite favicon. -->
+    <moqui.screen.ScreenThemeResource screenThemeId="DEFAULT" sequenceNum="101" resourceTypeEnumId="STRT_SHORTCUT_ICON"
+                                      resourceValue="/xstatic/favicon.ico"/>
+
     <!-- Use the same as Moqui default unless / until a change is made. The following is copied from WebrootQuasarThemeData.xml -->
     <!-- Required CSS files for layout/widgets/etc used in XML Screen/Form template macros -->
     <moqui.screen.ScreenThemeResource screenThemeId="XOLVE" sequenceNum="1" resourceTypeEnumId="STRT_STYLESHEET" resourceValue=""/>
@@ -33,4 +37,7 @@
     <moqui.screen.ScreenThemeResource screenThemeId="XOLVE" sequenceNum="201" resourceTypeEnumId="STRT_FOOTER_ITEM">
         <resourceValue><![CDATA[<div class="col-md-6 text-center q-px-md"><a class="text-grey-1" href="/qapps/ScreenTree">${ec.l10n.localize('Site Map')}</a></div>]]></resourceValue>
     </moqui.screen.ScreenThemeResource>
+
+    <!-- Set ALL_USERS to default to Xolve theme. -->
+    <moqui.security.UserGroupScreenTheme userGroupId="ALL_USERS" screenThemeTypeEnumId="STT_INTERNAL_QUASAR" screenThemeId="XOLVE" sequenceNum="10"/>
 </entity-facade-xml>
