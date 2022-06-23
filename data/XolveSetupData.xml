@@ -43,6 +43,14 @@ along with this software (see the LICENSE.md file). If not, see
     <moqui.screen.ScreenThemeResource screenThemeId="XOLVE" sequenceNum="20" resourceTypeEnumId="STRT_STYLESHEET"
                                       resourceValue="/css/WebrootVue.qvt.css"/>
 
+    <!-- /qapps (qvt/qvue) header plugins -->
+    <moqui.screen.ScreenThemeResource screenThemeId="XOLVE" sequenceNum="125" resourceTypeEnumId="STRT_HEADER_NAVBAR_COMP"
+                                      resourceValue="/ssstatic/lib/QuickSearch.qvue"/>
+    <moqui.screen.ScreenThemeResource screenThemeId="XOLVE" sequenceNum="130" resourceTypeEnumId="STRT_HEADER_NAVBAR_COMP"
+                                      resourceValue="/ssstatic/lib/ActiveOrgNav.qvue"/>
+    <moqui.screen.ScreenThemeResource screenThemeId="XOLVE" sequenceNum="135" resourceTypeEnumId="STRT_HEADER_ACCOUNT_COMP"
+                                      resourceValue="/ssstatic/lib/MyAccountNav.qvue"/>
+
     <!-- Footer items -->
     <moqui.screen.ScreenThemeResource screenThemeId="XOLVE" sequenceNum="200" resourceTypeEnumId="STRT_FOOTER_ITEM">
         <resourceValue><![CDATA[<div class="col-md-6 text-center q-px-md"><a class="text-grey-1" href="https://www.moqui.org/" target="_blank">${ec.resource.expand('Built on Moqui ${ec.factory.moquiVersion}', '')}</a></div>]]></resourceValue>
